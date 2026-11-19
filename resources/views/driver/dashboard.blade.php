@@ -175,7 +175,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
 
-        // Wait until Laravel Echo is initialized
+       
 
         window.addEventListener('load', function () {
 
@@ -188,6 +188,13 @@
 
                 return;
             }
+            window.Echo.connector.pusher.connection.bind('connected', () => {
+
+                const socketId = window.Echo.socketId();
+
+                console.log('My Socket ID:', socketId);
+
+            });
 
             const driverId = @json(auth()->id());
 

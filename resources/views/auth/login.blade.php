@@ -66,9 +66,9 @@
                     <hr>
 
                     <small>
-                        Admin: admin@test.com<br>
-                        Driver: driver1@test.com<br>
-                        Password: password123
+                        Admin: admin@example.com<br>
+                        Driver: driver1@example.com<br>
+                        Password: password
                     </small>
 
                 </div>
